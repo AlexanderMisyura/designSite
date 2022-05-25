@@ -31,19 +31,19 @@ a[href^='tel:'] {
 GALLERY
 ===============
 */
-.image:hover,
-.image:focus {
+.gallery-image:hover,
+.gallery-image:focus {
   cursor: pointer;
 }
 @media screen and (min-width:1024px) {
-  .image:hover,
-  .image:focus {
+  .gallery-image:hover,
+  .gallery-image:focus {
     transform: scale(1.01);
     box-shadow: 0px -1px 13px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px -1px 13px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -1px 13px 1px rgba(0,0,0,0.75);
   }
-  .image {
+  .gallery-image {
     transition: .2s ease;
   }
 }

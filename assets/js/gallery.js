@@ -99,7 +99,7 @@ class Gallery {
         divElem.classList.add('col-4', 'col-6-small', 'col-12-xsmall');
         container.appendChild(divElem);
         const spanElem = document.createElement('span');
-        spanElem.classList.add('image', 'fit', 'save-proportion');
+        spanElem.classList.add('gallery-image', 'image', 'fit', 'save-proportion');
         spanElem.style.backgroundImage = `url("${path}")`;
         divElem.appendChild(spanElem);
         const imgElem = document.createElement('img');
