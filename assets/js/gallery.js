@@ -101,8 +101,6 @@ class Gallery {
         const spanElem = document.createElement('span');
         spanElem.classList.add('image', 'fit', 'save-proportion');
         spanElem.style.backgroundImage = `url("${path}")`;
-        spanElem.style.backgroundSize = 'cover';
-        spanElem.style.backgroundPosition = 'center';
         divElem.appendChild(spanElem);
         const imgElem = document.createElement('img');
         imgElem.src = path;
