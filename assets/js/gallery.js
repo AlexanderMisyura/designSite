@@ -94,14 +94,18 @@ class Gallery {
     };
     function fillContainerElem(list, category) {
       list.forEach(imageName => {
+        const path = `images/gallery/${category}/${imageName}`;
         const divElem = document.createElement('div');
         divElem.classList.add('col-4', 'col-6-small', 'col-12-xsmall');
         container.appendChild(divElem);
         const spanElem = document.createElement('span');
-        spanElem.classList.add('image', 'fit');
+        spanElem.classList.add('image', 'fit', 'save-proportion');
+        spanElem.style.backgroundImage = `url("${path}")`;
+        spanElem.style.backgroundSize = 'cover';
+        spanElem.style.backgroundPosition = 'center';
         divElem.appendChild(spanElem);
         const imgElem = document.createElement('img');
-        imgElem.src = `images/gallery/${category}/${imageName}`;
+        imgElem.src = path;
         imgElem.classList.add('image-clickable');
         spanElem.appendChild(imgElem);
       });

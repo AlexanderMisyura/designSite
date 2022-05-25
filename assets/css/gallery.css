@@ -1,11 +1,32 @@
-.image-clickable {
-  transition: .4s ease;
-}
-.image-clickable:hover {
+.image:hover,
+.image:focus {
   cursor: pointer;
-  transform: scale(1.02);
+}
+@media screen and (min-width:1024px) {
+  .image:hover,
+  .image:focus {
+    transform: scale(1.01);
+    box-shadow: 0px -1px 13px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -1px 13px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 13px 1px rgba(0,0,0,0.75);
+  }
+  .image {
+    transition: .2s ease;
+  }
 }
 
+.save-proportion {
+  height: 0;
+  padding-bottom: 80%;
+
+  background-size: cover;
+  background-position: center;
+}
+.save-proportion > img {
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+}
 /*
 =============== 
 Modal
