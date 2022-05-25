@@ -1,3 +1,36 @@
+textarea {
+  resize: vertical;
+}
+.save-proportion-5x8 {
+  height: 0;
+  width: 100%;
+  padding-bottom: 62.5%;
+  position: relative;
+}
+.save-proportion-5x8 > .mapouter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+address {
+  margin-bottom: 2%;
+}
+
+a[href^='tel:'] {
+  display: inline-block;
+  margin-bottom: 2%;
+}
+
+.actions.stacked {
+  justify-content: space-around;
+}
+/*
+=============== 
+GALLERY
+===============
+*/
 .image:hover,
 .image:focus {
   cursor: pointer;
@@ -29,7 +62,7 @@
 }
 /*
 =============== 
-Modal
+gallery modal
 ===============
 */
 .stop-scroll {
