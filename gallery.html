@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/gallery.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -29,10 +30,6 @@
 											<li><a href="index.html">Главная страница</a></li>
                       <li><a href="gallery.html">Галерея</a></li>
 											<li><a href="contact.html">Связаться с нами</a></li>
-											<!-- <li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li> -->
 										</ul>
 									</div>
 								</li>
@@ -53,7 +50,7 @@
 									<form action="">
 										<div class="row gtr-uniform">
 											<div class="col-12">
-												<select name="design-category" id="design-category">
+												<select name="design-category" id="design-category-selector">
 													<option value="all">- Все категории -</option>
 													<option value="kitchen">- Кухня -</option>
 													<option value="livingroom">- Гостинная -</option>
@@ -65,80 +62,10 @@
 										</div>
 									</form>									
 									<div class="box alt">
-										<h5>Category 1</h5>
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/gallery/bathroom/pexels-christa-grover-1909791.jpg" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/gallery/bathroom/pexels-jean-van-der-meulen-14578.jpg" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/gallery/bathroom/pexels-joey-342800.jpg" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/gallery/bathroom/pexels-luis-ruiz-1370763.jpg" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/gallery/bathroom/pexels-luis-ruiz-1416244.jpg" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/gallery/bathroom/pexels-pixabay-358592.jpg" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/" alt="" /></span></div>
-											<div class="col-4 col-6-small"><span class="image fit"><img src="images/" alt="" /></span></div>
+										<div class="row gtr-50 gtr-uniform" id="gallery-container">
 										</div>
 									</div>
-									<div class="box alt">
-										<h5>Category 2</h5>
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<div class="box alt">
-										<h5>Category 3</h5>
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<div class="box alt">
-										<h5>Category 4</h5>
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<div class="box alt">
-										<h5>Category 5</h5>
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										</div>
-									</div>
+									
 								</section>
 							</div>
 						</section>
@@ -156,6 +83,13 @@
 							</ul>
 						</div>
 					</section>
+
+    			<!-- modal -->
+					<div class="modal">
+						<div class="modal-content">
+							<img class="main-img"/>
+						</div>
+					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -179,6 +113,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
 
 	</body>
 </html>

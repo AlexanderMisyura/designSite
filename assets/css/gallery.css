@@ -1,0 +1,48 @@
+.image-clickable {
+  transition: .4s ease;
+}
+.image-clickable:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+/*
+=============== 
+Modal
+===============
+*/
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  transition: all 0.3s linear;
+  opacity: 0;
+  min-height: 100vh;
+  overflow: scroll;
+}
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 4em;
+  position: relative;
+}
+.main-img {
+  width: 100%;
+  /* height: 89vh; */
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
