@@ -1,6 +1,16 @@
 textarea {
   resize: vertical;
 }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  background-color: rgb(144 144 144 / 73%);
+}
+
 .save-proportion-5x8 {
   height: 0;
   width: 100%;
@@ -23,14 +33,20 @@ a[href^='tel:'] {
   margin-bottom: 2%;
 }
 
-.actions.stacked {
+.wider {
   justify-content: space-around;
 }
+
 /*
 =============== 
 GALLERY
 ===============
 */
+
+.design-selector {
+  background-color: rgb(144 144 144 / 62%);
+}
+
 .gallery-image:hover,
 .gallery-image:focus {
   cursor: pointer;
