@@ -37,6 +37,38 @@ a[href^='tel:'] {
   justify-content: space-around;
 }
 
+/* navigation top and sidebar */
+.side-nav {
+  display: block;
+}
+.top-nav {
+  display: none;
+}
+
+@media screen and (min-width:1024px) {
+  .side-nav {
+    display: none;
+  }
+  .top-nav {
+    display: block;
+  }
+
+  .top-nav a {
+    transition: border .3s ease;
+  }
+
+  .top-nav a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+  .top-nav a.active-page {
+    color: #b8b8b8 !important;;
+  }
+  .top-nav a:hover {
+    color: #21b2a6 !important;
+  }
+}
+
+
 /*
 =============== 
 GALLERY
