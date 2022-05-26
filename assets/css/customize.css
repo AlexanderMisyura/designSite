@@ -11,19 +11,6 @@ textarea {
   background-color: rgb(144 144 144 / 73%);
 }
 
-.save-proportion-5x8 {
-  height: 0;
-  width: 100%;
-  padding-bottom: 62.5%;
-  position: relative;
-}
-.save-proportion-5x8 > .mapouter {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-}
-
 address {
   margin-bottom: 2%;
 }
@@ -35,6 +22,21 @@ a[href^='tel:'] {
 
 .wider {
   justify-content: space-around;
+}
+
+/* yandex maps */
+.save-proportion-5x8 {
+  height: 0;
+  width: 100%;
+  padding-bottom: 62.5%;
+  position: relative;
+}
+.save-proportion-5x8 > .mapouter,
+.save-proportion-5x8 > iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
 
 /* navigation top and sidebar */
