@@ -31,8 +31,8 @@ a[href^='tel:'] {
   padding-bottom: 62.5%;
   position: relative;
 }
-.save-proportion-5x8 > .mapouter,
-.save-proportion-5x8 > iframe {
+/* .save-proportion-5x8 > iframe, */
+.save-proportion-5x8 > .mapouter {
   position: absolute;
   left: 0;
   top: 0;
